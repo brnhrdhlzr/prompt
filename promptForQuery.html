@@ -1,20 +1,15 @@
-<html>
-	<head>
+<!DOCTYPE html>
+<html lang="en">
+	<head><title>Prompt</title>
 	</head>
 	<body>	
-		<script type="text/javascript">
+		<script>
 			var querystring;
 			querystring = decodeURI(window.location.search);
 			//console.log (querystring);
 			if (querystring != "" ){
 				prompt("Please copy this local path and open it in file explorer:", querystring.substring(1));
 			}
-			//window.open('','_self').close();
-			//"\\\\grznas02\\eldoc\\"
-			//window.close();
-			//alert("asfd");
 			history.back()
-		</script>
-		
+		</script>		
 </body>
-</html>
